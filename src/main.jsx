@@ -15,7 +15,7 @@ ReactDOM.render(
         <Route path="expenses" element={<Expenses />} />
         <Route path="invoices" element={<Invoices />}>
           <Route
-            index
+            index // index route shares the path of the parent
             element={
               <main style={{ padding: '1rem' }}>
                 <p>Select an invoice</p>
@@ -24,7 +24,7 @@ ReactDOM.render(
           />
           <Route path=":invoiceId" element={<Invoice />} />
         </Route>
-        <Route
+        <Route // "No match" route when 
           path="*"
           element={
             <main style={{ padding: '1rem' }}>
