@@ -15,7 +15,8 @@ export default function App() {
         <Link to="/invoices"> Invoices </Link> | {'  '}
         <Link to="/expenses"> Expenses </Link>
       </nav>
-      <Outlet /> // save display show in page this link 
+      <Outlet />
+      {/* save display show in page this link */}
     </div>
   );
 }
