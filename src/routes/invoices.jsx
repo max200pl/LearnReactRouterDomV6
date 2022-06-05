@@ -1,9 +1,15 @@
-import { NavLink, Outlet, useSearchParams } from 'react-router-dom';
+import {
+  NavLink,
+  Outlet,
+  useLocation,
+  useSearchParams,
+} from 'react-router-dom';
 import { getInvoices } from '../data';
 
 export default function Invoices() {
   let invoices = getInvoices();
   let [searchParams, setSearchParams] = useSearchParams();
+
 
   return (
     <div style={{ display: 'flex' }}>
